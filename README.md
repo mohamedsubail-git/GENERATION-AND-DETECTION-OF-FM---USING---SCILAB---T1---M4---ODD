@@ -1,3 +1,4 @@
+# Experiment 4
 # GENERATION-AND-DETECTION-OF-FM---USING---SCILAB---T1---M4---ODD
 # FREQUENCY MODULATION AND DEMODULATION
 
@@ -78,16 +79,51 @@ The circuits used to generate a frequency modulation must vary the frequency of 
 * If any Error, correct it in code and execute again.
 * Verify the generated waveform using Tabulation and Model Waveform.
 
----
-## TABLE:
+## PROGRAM
+am=7.2;
 
-<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/4c7fec07-2d15-4e6d-87ab-1a13f2335fff" />
+fm=448;
+
+ac=14.4;
+
+fc=4480;
+
+fs=44800;
+
+t=0:1/fs:2/fm;
+
+b=4.7;
+
+em=amcos(23.14fmt);
+
+subplot(3,1,1);
+
+plot(t,em);
+
+ec=accos(23.14fct);
+
+subplot(3,1,2);
+
+plot(t,ec);
+
+efm = ac * cos((23.14fct) + b * sin(23.14fmt));
+
+subplot(3,1,3);
+
+plot(t,efm);
 
 
-## MODEL GRAPH
+## Tabulation 
 
-<img width="1599" height="899" alt="image" src="https://github.com/user-attachments/assets/1f88a12b-cda4-42e7-9445-b95b086702a1" />
+<img width="1280" height="826" alt="image" src="https://github.com/user-attachments/assets/a237e528-9d6c-4d71-8b1c-5d50e9e74922" />
+## CALCULATION
+<img width="1600" height="1200" alt="WhatsApp Image 2026-09-23 at 4 06 28 PM" src="https://github.com/user-attachments/assets/4d19c30a-c04e-480d-b94d-d4eee216fd40" />
 
-##RESULT: Thus the frequency modulation and demodulation is successfully done and the output is experimentally verified. 
+
+## output
+<img width="1110" height="634" alt="image" src="https://github.com/user-attachments/assets/3fb22b87-d082-4f92-99cd-46f35c61b681" />
 
 
+## Results
+
+ Successfully generated frequency Modulation and Demodulation using SCILAB and to observe and measure the frequency deviation and the modulation index of FM.
